@@ -1,0 +1,65 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>ReservationAPI</name>
+    </assembly>
+    <members>
+        <member name="M:ReservationAPI.Controller.ReservationController.GetByDate(System.DateTime)">
+            <summary>
+            Get Reservations By Date
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:ReservationAPI.Controller.ReservationController.Save(ReservationAPI.Model.Reservation)">
+             <summary>
+             Save Reservation
+             </summary>
+             <remarks>
+             **Sample request body:**
+            
+                 { 
+                    "CustomerName" : "Mert Demirkıran",
+                    "CustomerEmail" : "mertdmkrn37@gmail.com",
+                    "Date" : "2023-11-11",
+                    "Description": "Kolay gelsin.",
+                    "GuestCount": 4
+                 }
+            
+             </remarks>
+             <returns></returns>
+        </member>
+        <member name="M:ReservationAPI.Controller.TableController.GetAll">
+            <summary>
+            Get All Tables
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:ReservationAPI.Controller.TableController.Save(ReservationAPI.Model.Table)">
+             <summary>
+             Save Table
+             </summary>
+             <remarks>
+             **Sample request body:**
+            
+                 { 
+                    "Number": "A-5",
+                    "Capacity": 12 
+                 }
+            
+             </remarks>
+             <returns></returns>
+        </member>
+        <member name="T:ReservationAPI.Migrations.ReservationApiV1">
+            <inheritdoc />
+        </member>
+        <member name="M:ReservationAPI.Migrations.ReservationApiV1.Up(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:ReservationAPI.Migrations.ReservationApiV1.Down(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:ReservationAPI.Migrations.ReservationApiV1.BuildTargetModel(Microsoft.EntityFrameworkCore.ModelBuilder)">
+            <inheritdoc />
+        </member>
+    </members>
+</doc>
