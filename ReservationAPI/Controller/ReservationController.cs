@@ -17,10 +17,10 @@ namespace ReservationAPI.Controller
         private ITableService _tableService;
         private readonly IMailHandler _mailHandler;  
 
-        public ReservationController(IMailHandler mailHandler)
+        public ReservationController(IMailHandler mailHandler, IReservationService reservationService, ITableService tableService)
         {
-            _reservationService = new ReservationService();
-            _tableService = new TableService();
+            _reservationService = reservationService;
+            _tableService = tableService;
             _mailHandler = mailHandler;
         }
 

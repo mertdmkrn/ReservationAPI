@@ -12,9 +12,9 @@ namespace ReservationAPI.Controller
     {
         private ITableService _tableService;
 
-        public TableController()
+        public TableController(ITableService tableService)
         {
-            _tableService = new TableService();
+            _tableService = tableService;
         }
 
         /// <summary>

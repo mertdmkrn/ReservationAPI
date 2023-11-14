@@ -9,9 +9,9 @@ namespace ReservationAPI.Service.Concrete
     {
         private ITableRepository _tableRepository;
 
-        public TableService()
+        public TableService(ITableRepository tableRepository)
         {
-            _tableRepository = new TableRepository();
+            _tableRepository = tableRepository;
         }
 
         public async Task<Table> GetTableByIdAsync(Guid id)

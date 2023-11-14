@@ -9,9 +9,9 @@ namespace ReservationAPI.Service.Concrete
     {
         private IReservationRepository _reservationRepository;
 
-        public ReservationService()
+        public ReservationService(IReservationRepository reservationRepository)
         {
-            _reservationRepository = new ReservationRepository();
+            _reservationRepository = reservationRepository;
         }
 
         public async Task<Reservation> GetReservationIdAsync(Guid id)
